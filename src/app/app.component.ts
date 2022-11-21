@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'chillinggame-site';
+
+  goToWhatsapp(){
+    window.location.href = "https://wa.link/28u8sx"
+  }
 }
+

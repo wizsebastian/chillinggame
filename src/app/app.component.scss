@@ -1,0 +1,36 @@
+.text{
+    font-family: 'VT323';
+    font-size: 22px;
+    color: #FFF;
+}
+
+
+.container{
+    background-color: #1C161C;
+    height: 100vh;
+    margin: -10px;
+    text-align: center;
+    width: 100%;
+}
+
+.name-company{
+    font-size: 50px;
+}
+
+.img{
+    width: 90%;
+}
+
+.hand-img{
+    width: 10%;
+    // position: relative;
+    left: 271px;
+}
+
+
+
+@media only screen and (min-width: 700px) {
+    .img{
+        width: 20%;
+    }
+  }
