@@ -52,9 +52,9 @@ export class FormalTemplateComponent implements OnInit {
   share() {
     if (navigator.share) {
       navigator.share({
-        title: 'Título del contenido',
-        text: 'Texto del contenido',
-        url: 'https://ejemplo.com'
+        title: 'Mira mi pass',
+        text: 'Aqui puedes ver toda mi informacion de contacto y redes sociales.',
+        url: 'https://www.chillinggame.com'
       }).then(() => {
         console.log('Contenido compartido');
       }).catch((error) => {
