@@ -1,0 +1,82 @@
+$base_color: #b08144;
+.container{
+    background-color: #FFF;
+padding-top: 20px;
+    .about{
+        color: #000000;
+        text-align: center;
+        .imgContainer{
+            display: flex;
+            width: 184px;
+            height: 184px;
+            border: solid px $base_color;
+            border-radius: 131px;
+            margin: 20px;
+            box-shadow: $base_color 9px -9px 20px 2px;
+            img{
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .name{
+            font-weight: bold;
+            font-size: 28px;
+            align-items: center;
+        }
+        .subget{
+            font-style: italic;
+
+        }
+
+    }
+    .tree{
+        .link{
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: $base_color;
+            margin: 20px;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+
+            .link-text{
+                color: #FFF;
+                padding-left: 10px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .top-buttons{
+        display: flex;
+        justify-content: end;
+        img{
+            border-radius: 5px;
+            background-color: $base_color;
+            width: 40px;
+        }
+    }
+
+   
+}
+
+.animate-icon{
+    background: #000000;
+    width: 100vh;
+    height: 100vh;
+    position: relative;
+    z-index: 99999;
+}
+
+.company{
+    background-color: $base_color;
+    color: #FFF;
+    text-align: center;
+    font-size: 21px;
+    padding: 6px;
+}
