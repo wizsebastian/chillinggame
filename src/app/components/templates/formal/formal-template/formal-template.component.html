@@ -1,0 +1,36 @@
+<div class="container" >
+
+    <div class="top-buttons">
+            <img  (click)="share()" src="../../../../../assets/share-icon.png" alt="share icon">
+    </div>
+  <div class="row">
+    <div class="col-sm">
+      <div class="about">
+        <div class="imgContainer mx-auto">
+
+          <img class="rounded-circle" src="../../../../../assets/first_img.png" alt="profile picture user">
+        </div>
+        <h2 class="name">Indira Jimenez</h2>
+        <p class="subget">| Asesora en inversiones inmobiliarias |</p>
+        <h4 class="aboutTitle">Acerca de</h4>
+        <p class="aboutText">Me considero abogada por vocación, ya que el derecho me ha definido a lo largo de la vida y
+          es esta pasión lo que me lleva a buscar experiencias en el mercado laboral que me permitan un desarrollo
+          eficaz en el mundo de la justicia.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="tree" *ngFor="let link of links">
+            <div class="col-12">
+              <a  href="{{link.link}}" class="link">
+                <div class="link-img-container">
+                    <img src="{{ruta}}{{link.imgName}}" alt="{{link.text}}">
+                </div>
+                <h2 class="link-text">{{link.text}}</h2>
+            </a>
+            </div>
+        </div>
+  </div>
+</div>
+<div class="fixed-bottom company">Make with &#x1F499; by GMD Tech </div>
