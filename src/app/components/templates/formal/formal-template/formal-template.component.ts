@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import anime from 'animejs/lib/anime.es.js';
+import { VCard } from "ngx-vcard";
+
 
 @Component({
   selector: 'app-formal-template',
@@ -7,6 +9,19 @@ import anime from 'animejs/lib/anime.es.js';
   styleUrls: ['./formal-template.component.scss']
 })
 export class FormalTemplateComponent implements OnInit {
+  public vCard: VCard = {
+    name: {
+      firstNames: "Indira",
+      lastNames: "Jimenez",
+    },
+  };
+  public generateVCardOnTheFly = (): VCard => {
+    // TODO: Generate the VCard before Download
+    return {
+      name: { firstNames: "Indira", lastNames: "Jimenez", addtionalNames: "Auto" },
+    };
+  };
+
   ruta: string = '../formal-template/../../../../../assets/'
   imgType: string = '.png'
   public contact = {
@@ -45,6 +60,28 @@ export class FormalTemplateComponent implements OnInit {
       duration: 100000
     });
   }
+  
+  // descargarContacto() {
+  //   // Crea un nuevo objeto vCard
+  //   const vcard = new VCard();
+  
+  //   // Agrega la información del contacto
+  //   vcard.addName('Apellido', 'Nombre');
+  //   vcard.addEmail('correo@ejemplo.com');
+  //   vcard.addPhoneNumber('1234567890');
+  //   vcard.addAddress('', '', 'Calle 123', '', 'Ciudad', 'Estado', 'Código postal', 'País');
+  
+  //   // Genera el archivo vCard y lo descarga
+  //   const blob = new Blob([vcard.getFormattedString()], { type: 'text/vcard;charset=utf-8;' });
+  //   const url = URL.createObjectURL(blob);
+  //   const a = document.createElement('a');
+  //   a.href = url;
+  //   a.download = 'contacto.vcf';
+  //   document.body.appendChild(a);
+  //   a.click();
+  //   document.body.removeChild(a);
+  //   URL.revokeObjectURL(url);
+  // }
   
   
 

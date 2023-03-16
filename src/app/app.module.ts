@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FormalTemplateComponent } from './components/templates/formal/formal-template/formal-template.component';
+import { NgxVcardModule } from "ngx-vcard";
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { FormalTemplateComponent } from './components/templates/formal/formal-te
     FormalTemplateComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgxVcardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

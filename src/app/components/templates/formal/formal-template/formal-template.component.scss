@@ -1,4 +1,4 @@
-$base_color: #b08144;
+$base_color: #efcca3;
 .container{
     background-color: #FFF;
 padding-top: 20px;
@@ -30,16 +30,23 @@ padding-top: 20px;
 
     }
     .tree{
+        .cont{
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+        display: flex;
+        justify-content: center;
         .link{
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            justify-content: start;
+            background-color: #efcca369;
+            border-radius: 100%;
             padding: 8px;
-            border-radius: 10px;
-            background-color: $base_color;
-            margin: 10px;
-            // font-size: 10px;
+            text-decoration: none;
+            margin-bottom: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+
             img{
                 width: 30px;
                 height: 30px;
@@ -59,7 +66,7 @@ padding-top: 20px;
         justify-content: end;
         img{
             border-radius: 5px;
-            background-color: $base_color;
+
             width: 40px;
         }
     }
@@ -79,6 +86,39 @@ padding-top: 20px;
     background-color: $base_color;
     color: #FFF;
     text-align: center;
-    font-size: 21px;
+    font-size: 12px;
     padding: 6px;
+}
+.emblemContainer{
+    height: 100%;
+}
+.emblemEdited{
+   height: auto !important;
+}
+
+
+
+
+.appointment-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 8px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
+    button{
+        background: #be9e72;
+        width: 70%;
+        border-radius: 24px;
+        color: #FFF;
+        a{
+            color: #FFF;
+            padding: 0 !important;
+            margin: 0 !important
+        }
+    }
 }
