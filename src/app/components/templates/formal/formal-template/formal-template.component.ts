@@ -14,6 +14,14 @@ export class FormalTemplateComponent implements OnInit {
       firstNames: "Indira",
       lastNames: "Jimenez",
     },
+    telephone: [{
+      value: "+18092175857",
+      param: {type: 'work'},
+    }], 
+    email: [{
+      value: "indira.jimenezmetz@gmail.com",
+      param: {type: 'work'},
+    }]
   };
   public generateVCardOnTheFly = (): VCard => {
     // TODO: Generate the VCard before Download

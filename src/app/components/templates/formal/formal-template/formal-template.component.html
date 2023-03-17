@@ -1,59 +1,59 @@
 <div class="container" >
 
-    <div class="top-buttons">
-            <img  (click)="share()" src="../../../../../assets/share-icon.png" alt="share icon">
-    </div>
-  <div class="row">
-    <div class="col-sm">
-      <div class="about">
-        <div class="imgContainer mx-auto">
+  <div class="top-buttons">
+          <img  (click)="share()" src="../../../../../assets/share-icon.png" alt="share icon">
+  </div>
+<div class="row">
+  <div class="col-sm">
+    <div class="about">
+      <div class="imgContainer mx-auto">
 
-          <img class="rounded-circle" src="../../../../../assets/first_img.png" alt="profile picture user">
-        </div>
-        <h2 class="name">Indira Jimenez</h2>
-        <p class="subget">Asesora en inversiones inmobiliarias 
-          <br>
-          en 
-          <b>República Dominicana</b> y consultora jurídica</p>
-        <!-- <h4 class="aboutTitle">Acerca de</h4> -->
-        <!-- <p class="aboutText">Me considero abogada por vocación, ya que el derecho me ha definido a lo largo de la vida y
-          es esta pasión lo que me lleva a buscar experiencias en el mercado laboral que me permitan un desarrollo
-          eficaz en el mundo de la justicia.</p> -->
+        <img class="rounded-circle" src="../../../../../assets/first_img.png" alt="profile picture user">
       </div>
+      <h2 class="name">Indira Jimenez</h2>
+      <p>Asesora en inversiones inmobiliarias 
+        <br>
+        en 
+        <b>República Dominicana</b> y consultora jurídica</p>
+      <!-- <h4 class="aboutTitle">Acerca de</h4> -->
+      <!-- <p class="aboutText">Me considero abogada por vocación, ya que el derecho me ha definido a lo largo de la vida y
+        es esta pasión lo que me lleva a buscar experiencias en el mercado laboral que me permitan un desarrollo
+        eficaz en el mundo de la justicia.</p> -->
     </div>
   </div>
-  <div class="tree">
-    <div class="cont" *ngFor="let link of links">
-        <div class="elemt">
-          <a  href="{{link.link}}" class="link">
-            <div class="link-img-container">
-                <img src="{{ruta}}{{link.imgName}}" alt="{{link.text}}">
-            </div>
-        </a>
-        </div>
-    </div>
-    </div>
-  <div class="row btn-container">
-    <button class="btn" id="downloadButtonNormal" [vcdDownloadVCard]="vCard">
-      Guarda mi contacto
-    </button>
+</div>
+<div class="tree">
+  <div class="cont" *ngFor="let link of links">
+      <div class="elemt">
+        <a  href="{{link.link}}" class="link">
+          <div class="link-img-container">
+              <img src="{{ruta}}{{link.imgName}}" alt="{{link.text}}">
+          </div>
+      </a>
+      </div>
   </div>
+  </div>
+<div class="row btn-container">
+  <button class="btn" id="downloadButtonNormal" [vcdDownloadVCard]="vCard">
+    Guarda mi contacto
+  </button>
+</div>
 </div>
 <!-- <div class="fixed-bottom company">Made with ❤️ by GMD Tech </div>
 <div> -->
 
-  <h2 class="appointment-title">Próximo evento</h2>
+<h2 class="appointment-title">Agenda tu cita</h2>
 <!-- </div> -->
 <div class="emblem">
-  <!-- <div class="row btn-container">
-    <button class="btn">
-      <a class="" style="margin-bottom: 10px" href="https://wa.me/18092175857?text=Hola%20Indira,%20quiero%20confirmar%20mi%20reunion%20contigo%20en%208013%20International%20Drive,%20Orlando%20FL;%20Starbucks,%20el%20d%C3%ADa%20..." class="btn" >
-        Ponte en contacto conmigo
-      </a>
-    </button>
-  </div> -->
-  <div class="calendly-inline-widget" style="height: 1080px; overflow: hidden !important" 
-  data-url="https://calendly.com/realestate-indirajimenez/como-invertir-en-bienes-raices-en-republica-dominicana?hide_gdpr_banner=1&primary_color=d0ae87"></div>
+<!-- <div class="row btn-container">
+  <button class="btn">
+    <a class="" style="margin-bottom: 10px" href="https://wa.me/18092175857?text=Hola%20Indira,%20quiero%20confirmar%20mi%20reunion%20contigo%20en%208013%20International%20Drive,%20Orlando%20FL;%20Starbucks,%20el%20d%C3%ADa%20..." class="btn" >
+      Ponte en contacto conmigo
+    </a>
+  </button>
+</div> -->
+<div class="calendly-inline-widget" style="height: 1080px; overflow: hidden !important" 
+data-url="https://calendly.com/realestate-indirajimenez/como-invertir-en-bienes-raices-en-republica-dominicana?hide_gdpr_banner=1&primary_color=d0ae87"></div>
 </div>
 
 
